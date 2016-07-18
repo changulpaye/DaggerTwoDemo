@@ -21,11 +21,13 @@ public class NetworkModule {
     }
 
     @Provides
+    @Singleton
     GsonConverterFactory provideGsonConverterFactory() {
         return GsonConverterFactory.create();
     }
 
     @Provides
+    @Singleton
     RxJavaCallAdapterFactory provideRxJavaCallAdapterFactory() {
         return RxJavaCallAdapterFactory.create();
     }
